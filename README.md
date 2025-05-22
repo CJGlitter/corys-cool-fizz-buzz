@@ -33,7 +33,7 @@ corys-cool-fizz-buzz
 1. **Clone the repository:**
    ```
    git clone <repository-url>
-   cd fizzbuzz-speaker
+   cd corys-cool-fizz-buzz
    ```
 
 2. **Install dependencies:**
@@ -54,7 +54,6 @@ corys-cool-fizz-buzz
 - Enter a number in the input field and click the "Submit" button.
 - Alternatively, click the microphone button and speak a number to input it by voice.
 - The application will display the result ("Fizz", "Buzz", "FizzBuzz", or the number itself) and will also speak the result using the Web Speech API with expressive variations in pitch and rate.
-- You can share specific FizzBuzz results by using URL parameters (e.g., `?number=15`).
 
 ## Technologies Used
 
@@ -66,4 +65,4 @@ corys-cool-fizz-buzz
 
 ## Contributing
 
-Feel free to submit issues or pull requests for improvements or bug fixes.
+Feel free to submit issues or pull requests for improvements or bug fixes but I will NOT address them. 🤪
