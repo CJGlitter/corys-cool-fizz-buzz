@@ -20,16 +20,21 @@ h1 {
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 100%; /* Match the button width exactly */
     padding: 10px;
-    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width */
 }
 
 button {
     width: 100%;
     padding: 10px;
+    margin: 0;
     background-color: #28a745;
     color: white;
     border: none;

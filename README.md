@@ -14,6 +14,9 @@ corys-cool-fizz-buzz
 │   ├── js
 │   │   ├── fizzbuzz.js     # FizzBuzz logic for client-side
 │   │   └── main.js         # Main client-side JavaScript
+│   ├── favicon-16x16.png   # Favicon for smaller screens (16x16px)
+│   ├── favicon-32x32.png   # Favicon for standard displays (32x32px)
+│   ├── apple-touch-icon.png # Touch icon for Apple devices (180x180px)
 │   └── index.html          # Main HTML file
 ├── src
 │   ├── server.js           # Node.js server setup
