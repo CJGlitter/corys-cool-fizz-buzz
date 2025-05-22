@@ -1,0 +1,14 @@
+{
+  "name": "fizzbuzz-speaker",
+  "version": "1.0.0",
+  "description": "A Fizz Buzz web app that speaks the results using the Web Speech API.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

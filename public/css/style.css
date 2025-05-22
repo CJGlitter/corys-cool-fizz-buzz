@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-container {
+    margin-top: 40px;
+    padding: 0;
+    text-align: center;
+}
+
+.result-display {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 0, 0, 0.8),     /* Red */
+        rgba(255, 127, 0, 0.8),   /* Orange */
+        rgba(255, 255, 0, 0.8),   /* Yellow */
+        rgba(0, 255, 0, 0.8),     /* Green */
+        rgba(0, 0, 255, 0.8),     /* Blue */
+        rgba(75, 0, 130, 0.8),    /* Indigo */
+        rgba(148, 0, 211, 0.8)    /* Violet */
+    );
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 6s linear infinite;
+    padding: 20px;
+    margin: 0 auto;
+    min-height: 60px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 5;
+}
+
+/* Raining Text Effect */
+#rain-container {
+    position: fixed;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 100;
+    transition: opacity 1.5s ease-out;
+}
+
+#rain-container.fade-out {
+    opacity: 0;
+}
+
+.rain-text {
+    position: absolute;
+    /* Color will be set via JavaScript */
+    animation: rainFall linear forwards;
+    /* Animation duration will be set via JavaScript */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    user-select: none;
+    transition: opacity 1.5s ease-out;
+}
+
+@keyframes rainFall {
+    0% {
+        transform: translateY(-50px) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(calc(100vh + 50px)) rotate(360deg);
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
