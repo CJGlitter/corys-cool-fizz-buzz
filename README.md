@@ -10,14 +10,15 @@ corys-cool-fizz-buzz
 │   ├── css
 │   │   └── style.css       # Styles for the application
 │   ├── js
-│   │   └── main.js         # Client-side JavaScript
+│   │   ├── fizzbuzz.js     # FizzBuzz logic for client-side
+│   │   └── main.js         # Main client-side JavaScript
 │   └── index.html          # Main HTML file
 ├── src
 │   ├── server.js           # Node.js server setup
-│   └── fizzbuzz.js         # FizzBuzz logic
-├── package.json             # npm configuration
-├── .gitignore               # Git ignore file
-└── README.md                # Project documentation
+│   └── fizzbuzz.js         # FizzBuzz logic for server-side
+├── package.json            # npm configuration
+├── .gitignore              # Git ignore file
+└── README.md               # Project documentation
 ```
 
 ## Setup Instructions
