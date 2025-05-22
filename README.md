@@ -2,6 +2,8 @@
 
 This project is a simple web application that implements the FizzBuzz logic and utilizes the Web Speech API to vocalize the results. Users can enter a number, and the application will display and speak "Fizz", "Buzz", "FizzBuzz", or the number itself based on the FizzBuzz rules.
 
+_Project created as part of a GitHub Copilot training workshop._
+
 ## Project Structure
 
 ```
