@@ -4,6 +4,10 @@ This project is a simple web application that implements the FizzBuzz logic and 
 
 _Project created as part of a GitHub Copilot training workshop._
 
+## Live Demo
+
+Check out the live application at: https://[your-username].github.io/corys-cool-fizz-buzz/
+
 ## Project Structure
 
 ```
@@ -30,6 +34,8 @@ corys-cool-fizz-buzz
 
 ## Setup Instructions
 
+### Local Development
+
 1. **Clone the repository:**
    ```
    git clone <repository-url>
@@ -49,6 +55,19 @@ corys-cool-fizz-buzz
 4. **Open your browser:**
    Navigate to `http://localhost:3000` to access the FizzBuzz Speaker application.
 
+### GitHub Pages Deployment
+
+1. **Fork or clone this repository**
+
+2. **Enable GitHub Pages:**
+   - Go to your repository settings
+   - Navigate to "Pages" section
+   - Set the source branch to "main" and folder to "/root"
+   - Click "Save"
+
+3. **Automatic Deployment:**
+   The included GitHub workflow will automatically deploy your app to GitHub Pages whenever you push to the main branch.
+
 ## Usage
 
 - Enter a number in the input field and click the "Submit" button.
@@ -58,10 +77,12 @@ corys-cool-fizz-buzz
 ## Technologies Used
 
 - Node.js
-- Express
+- Express (for local development)
 - HTML/CSS
 - JavaScript
 - Web Speech API
+- GitHub Pages
+- GitHub Actions
 
 ## Contributing
 
