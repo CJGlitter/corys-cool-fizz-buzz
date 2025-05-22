@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Store the interval ID for potential cleanup
                 element.setAttribute('data-fade-interval', fadeInterval);
-                console.log(`Started fade interval ${fadeInterval} for element`);
+                // console.log(`Started fade interval ${fadeInterval} for element`);
             });
         }, 5000);
         
