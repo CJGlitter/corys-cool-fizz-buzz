@@ -8,7 +8,7 @@ _Project created as part of a GitHub Copilot training workshop._
 
 ## Live Demo
 
-Check out the live application at: https://cjglitter.github.io/corys-cool-fizz-buzz/
+Check out the live application at: https://cjglitter.github.io/corys-cool-fizz-buzz/public/index
 
 ## Project Structure
 
