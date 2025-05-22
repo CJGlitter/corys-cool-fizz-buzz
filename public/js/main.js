@@ -13,7 +13,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function speakResult(result) {
         const utterance = new SpeechSynthesisUtterance(result);
+        
+        // Get available voices
+        const voices = window.speechSynthesis.getVoices();
+        
+        // Try to find a more energetic voice (preferences vary by OS)
+        let preferredVoice = voices.find(voice => 
+            voice.name.includes('Google') || 
+            voice.name.includes('Samantha') ||
+            voice.name.includes('Daniel')
+        );
+        
+        // Set voice if found
+        if (preferredVoice) utterance.voice = preferredVoice;
+        
+        // Make speech more expressive by adjusting parameters
+        if (result === "FizzBuzz") {
+            // More excited for FizzBuzz!
+            utterance.pitch = 1.5;  // Higher pitch
+            utterance.rate = 1.1;   // Slightly faster
+            utterance.volume = 1.0; // Full volume
+        } else if (result === "Fizz") {
+            // Playful for Fizz
+            utterance.pitch = 1.2;
+            utterance.rate = 0.9;   // Slightly slower
+        } else if (result === "Buzz") {
+            // Deeper for Buzz
+            utterance.pitch = 0.7;  // Lower pitch
+            utterance.rate = 1.0;
+        }
+        
+        // Speak the text
         window.speechSynthesis.speak(utterance);
+        
+        // Log available voices to console for debugging
+        console.log("Available voices:", voices);
     }
     
     // Store rain elements batches with their timestamps
