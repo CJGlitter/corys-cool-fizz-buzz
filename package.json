@@ -2,13 +2,20 @@
   "name": "fizzbuzz-speaker",
   "version": "1.0.0",
   "description": "A Fizz Buzz web app that speaks the results using the Web Speech API.",
+  "homepage": "https://cjglitter.github.io/corys-cool-fizz-buzz/",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "build": "mkdir -p build && cp -r public/* build/"
+    "build": "mkdir -p build && cp -r public/* build/",
+    "test-gh-pages": "./test-gh-pages.sh",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   },
   "author": "",
   "license": "ISC"
