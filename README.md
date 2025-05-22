@@ -13,7 +13,9 @@ corys-cool-fizz-buzz
 │   │   └── style.css       # Styles for the application
 │   ├── js
 │   │   ├── fizzbuzz.js     # FizzBuzz logic for client-side
-│   │   └── main.js         # Main client-side JavaScript
+│   │   ├── main.js         # Main client-side JavaScript
+│   │   ├── speech.js       # Speech synthesis functionality
+│   │   └── voiceRecognition.js # Voice recognition functionality
 │   ├── favicon-16x16.png   # Favicon for smaller screens (16x16px)
 │   ├── favicon-32x32.png   # Favicon for standard displays (32x32px)
 │   ├── apple-touch-icon.png # Touch icon for Apple devices (180x180px)
@@ -50,7 +52,9 @@ corys-cool-fizz-buzz
 ## Usage
 
 - Enter a number in the input field and click the "Submit" button.
-- The application will display the result ("Fizz", "Buzz", "FizzBuzz", or the number itself) and will also speak the result using the Web Speech API.
+- Alternatively, click the microphone button and speak a number to input it by voice.
+- The application will display the result ("Fizz", "Buzz", "FizzBuzz", or the number itself) and will also speak the result using the Web Speech API with expressive variations in pitch and rate.
+- You can share specific FizzBuzz results by using URL parameters (e.g., `?number=15`).
 
 ## Technologies Used
 
