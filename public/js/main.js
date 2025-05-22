@@ -1,15 +1,46 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inputField = document.getElementById('numberInput');
     const submitButton = document.getElementById('submitButton');
+    const voiceInputButton = document.getElementById('voiceInputButton');
     const resultDisplay = document.getElementById('result');
 
-    submitButton.addEventListener('click', function() {
+    // Process input function to avoid code duplication
+    function processInput() {
         const number = parseInt(inputField.value);
+        if (isNaN(number)) {
+            console.log('Please enter a valid number');
+            return;
+        }
         const result = fizzBuzz(number);
         resultDisplay.textContent = result;
         SpeechManager.speakResult(result);
         createRainingEffect(result);
+    }
+
+    // Submit button event listener
+    submitButton.addEventListener('click', processInput);
+    
+    // Allow Enter key to submit
+    inputField.addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            processInput();
+        }
     });
+    
+    // Initialize voice recognition
+    if (VoiceRecognitionManager.init(function(number) {
+        // This callback will be called when speech is recognized
+        inputField.value = number;
+        processInput();
+    })) {
+        // If speech recognition is available, set up the voice input button
+        voiceInputButton.addEventListener('click', function() {
+            VoiceRecognitionManager.startListening(voiceInputButton);
+        });
+    } else {
+        // If speech recognition is not available, hide the button
+        voiceInputButton.style.display = 'none';
+    }
     
     // Store rain elements batches with their timestamps
     let rainBatches = [];

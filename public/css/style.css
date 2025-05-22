@@ -19,8 +19,14 @@ h1 {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 input[type="number"] {
-    width: 100%; /* Match the button width exactly */
+    flex: 1;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -29,6 +35,38 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+#voiceInputButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#voiceInputButton:hover {
+    background-color: #0069d9;
+}
+
+#voiceInputButton.listening {
+    background-color: #dc3545;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 button {

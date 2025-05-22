@@ -13,7 +13,10 @@
 <body>
     <div class="container">
         <h1>Fizz Buzz Speaker</h1>
-        <input type="number" id="numberInput" placeholder="Enter a number" />
+        <div class="input-container">
+            <input type="number" id="numberInput" placeholder="Enter a number" />
+            <button id="voiceInputButton" title="Speak a number">🎤 Speak</button>
+        </div>
         <button id="submitButton">Submit</button>
         <div class="result-container">
             <div id="result" class="result-display"></div>
@@ -21,6 +24,7 @@
     </div>
     <script src="js/fizzbuzz.js"></script>
     <script src="js/speech.js"></script>
+    <script src="js/voiceRecognition.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
