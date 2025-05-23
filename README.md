@@ -55,34 +55,6 @@ corys-cool-fizz-buzz
 4. **Open your browser:**
    Navigate to `http://localhost:3000` to access the FizzBuzz Speaker application.
 
-### GitHub Pages Deployment
-
-1. **Fork or clone this repository**
-
-2. **Merge the GitHub Pages optimization branch:**
-   ```bash
-   git checkout main
-   git merge github-pages-optimization
-   git push origin main
-   ```
-
-3. **Enable GitHub Pages:**
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set the source to "GitHub Actions"
-   - Click "Save"
-
-4. **Automatic Deployment:**
-   The included GitHub workflow will automatically deploy your app to GitHub Pages whenever you push to the main branch. The deployment process:
-   - Copies files from `/public` directory to a build folder
-   - Uploads the build as an artifact
-   - Deploys to GitHub Pages
-   
-5. **Custom Domain (Optional):**
-   - Edit the `public/CNAME` file to include your custom domain
-   - Configure your domain's DNS settings as per GitHub documentation
-   - Enable custom domain in repository settings under "Pages"
-
 ## Usage
 
 - Enter a number in the input field and click the "Submit" button.
